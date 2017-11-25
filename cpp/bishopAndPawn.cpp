@@ -31,7 +31,7 @@ bool bishopAndPawn(std::string cell1, std::string cell2) {
       x2 = myParser.getX(cell2[0]),
       y2 = myParser.getY(cell2[1]);
 
-  if (x1 + y2 == x2 + y1 || x1 + y1 == x2 + y2) {
+  if (x1 + y1 == x2 + y2 || x1  - y1 == x2 - y2) {
     return true;
   }
 
